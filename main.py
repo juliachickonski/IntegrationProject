@@ -1,11 +1,11 @@
-"""Integration Project Final"""
+"""Code for Julia Chickonski's integration project for COP 1500"""
 import random
-
 _author_ = "Julia Chickonski"
 
 
 def basic_calc():
-    """Acts as a basic calculator"""
+    """The purpose of this function is to let the user calculate a variety
+    of different math problem types. """
     print("\nWhat can I help you calculate today?")
     print("1. Exponents")
     print("2. Multiplication")
@@ -86,10 +86,10 @@ def basic_calc():
         print()
 
 
-# MadLibs
 # Free story from https://www.madtakes.com/libs/021.html
 def mad_libs():
-    """Prompts user to type out words to fill in the story"""
+    """The purpose of this function is to tell the user a  story using
+    words the user inputs."""
     print("\nTell your own story.")
     print(
         "This is a MadLibs style story where you will input nouns, verbs, "
@@ -105,20 +105,16 @@ def mad_libs():
     name_2 = input("Give me a NAME: ")
     print(adj_1, name_1,
           'Brothers is a popular video game where you control a/an ' +
-          job_type)
-    print(
-        'as he/she runs through levels ' + verb_ing + ' on enemies and eating '
-        + plant_type)
-    print(
-        'to get ' + adj_2 + ' Fireflowers so that he/she can throw ' + noun_1 +
-        ' at enemies.')
-    print(
-        'He does all this to save the ' + noun_2 + ' Kingdom from the evil ' +
-        name_2 + '.')
+          job_type + 'as he/she runs through levels ' + verb_ing + ' on '
+          'enemies and eating ' + plant_type + 'to get ' + adj_2 +
+          'Fireflowers so that he/she can throw ' + noun_1 + ' at enemies. He '
+          'does all this to save the ' + noun_2 + ' Kingdom from the evil '
+          + name_2 + '.')
 
 
 def random_machine():
-    """Decision Maker"""
+    """The purpose of this function is to help the user make different types of
+    decisions using a dice roll, coin flip, or a Magic 8 Ball"""
     print(
         "To help you choose, I can: \n1. Roll a dice \n2. I can flip a coin. "
         "\n3. Magic 8 Ball",
@@ -163,7 +159,8 @@ def random_machine():
 
 
 def main():
-    """Main Function interface"""
+    """The first thing the user sees when they run the program. Gives a
+    quick introduction then lists what the program can accomplish in a menu."""
     do_again = "YES" and "yes"
     while do_again == "yes":
         print("Hello! Welcome to my Integration Project")
@@ -195,5 +192,6 @@ def main():
     else:
         print()
 
-
-main()
+        
+if __name__ == "__main__":
+    main()
