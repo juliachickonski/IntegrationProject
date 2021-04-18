@@ -86,6 +86,7 @@ def basic_calc():
         print()
 
 
+# MadLibs
 # Free story from https://www.madtakes.com/libs/021.html
 def mad_libs():
     """The purpose of this function is to tell the user a  story using
@@ -115,6 +116,8 @@ def mad_libs():
 def random_machine():
     """The purpose of this function is to help the user make different types of
     decisions using a dice roll, coin flip, or a Magic 8 Ball"""
+    # help with using random.randint() came from W3 Schools
+    # https://www.w3schools.com/python/ref_random_randint.asp
     print(
         "To help you choose, I can: \n1. Roll a dice \n2. I can flip a coin. "
         "\n3. Magic 8 Ball",
@@ -192,6 +195,6 @@ def main():
     else:
         print()
 
-        
+
 if __name__ == "__main__":
     main()
